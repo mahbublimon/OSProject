@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.multithreadingdemo.MainController"
+      spacing="10" alignment="CENTER" style="-fx-padding: 20;">
+
+    <Label text="Multithreading Demo" style="-fx-font-size: 18; -fx-font-weight: bold;"/>
+
+    <Label fx:id="counterLabel" text="Counter: 0" style="-fx-font-size: 16;"/>
+
+    <Label fx:id="intervalLabel" text="Poll Interval: 1000 ms"/>
+
+    <Slider fx:id="pollIntervalSlider" min="10" max="2000" value="1000"
+            showTickLabels="true" showTickMarks="true" majorTickUnit="500"
+            minorTickCount="4" blockIncrement="100" snapToTicks="true"/>
+
+    <Label text="Adjust the slider to change poll interval"/>
+</VBox>
